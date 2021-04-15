@@ -1,0 +1,65 @@
+{% load static %}
+
+<!-- Needs to be done:
+    - Responsiveness
+    - Fix the follow-text to make it align in center  -->
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'base/css/style.css' %}">
+        <title>Yousef Edwards</title>
+    </head>
+
+    <body>
+        <div class="container text-center my-5">
+            <div class="wrapper">
+                <div class="static">
+                    >
+                </div>
+                <div class="dynamic">
+                    Hi I'm Yousef Edwards
+                </div>
+            </div>
+            <p class="follow-text">I am a student at UCF who recently discovered a passion for web developing
+                and I am aspiring to become a full stack engineer </p>
+        </div>
+
+        <div class="container">
+            <div class="card w-75 mx-auto">
+                <div class="card-header" style="background-color: #D6D3CF;">
+                    <span class="dot" style="background: #ED594A;"></span>
+                    <span class="dot" style="background: #FDD800;"></span>
+                    <span class="dot" style="background: #5AC05A;"></span>
+                </div>
+                <div class="card-body" style="background-color: #7E5273;">
+                    <p class="ubu-text">~$ Yousef.currentLocation</p>
+                    <p class="res-text">"Orlando, Florida"</p>
+                    <h5 class="ubu-text">~$ Yousef.contactInfo</h5>
+                    <p class="res-text">
+                        {<a href="mailto:yousefedwards@gmail.com">"yousefedwards@gmail.com"</a>,
+                        <a href="https://www.linkedin.com/in/yle610/">"LinkedIn"</a>,
+                        <a href="https://github.com/Yousef4410">"GitHub"</a>}
+                    </p>
+                    <h5 class="ubu-text">~$ Yousef.education</h5>
+                    <p class="res-text">"B.S. Computer Engineering - University of Central Florida, Orlando"</p>
+                    <h5 class="ubu-text">~$ Yousef.technicalSkills</h5>
+                    <p class="res-text">{"Java", "C", "React.js", "CSS", "HTML", "MySQL", "Vivado"}</p>
+                    <h5 class="ubu-text">~$ Yousef.interests</h5>
+                    <p class="res-text">{"Video Games", "Soccer", "Cooking", "Stocks and Cryptocurrency"}</p>
+                    
+                </div>
+            </div>    
+        </div>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    </body>
+</html>
